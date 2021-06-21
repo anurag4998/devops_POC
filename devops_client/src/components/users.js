@@ -100,7 +100,7 @@ const Users = () => {
       isError = true;
 
     }
-    else if (!isNaN(updatedRow.balance)) {
+    else if (isNaN(updatedRow.balance)) {
       toast.error("Enter a valid number");
       isError = true;
 
@@ -143,7 +143,7 @@ const Users = () => {
       isError = true;
 
     }
-    else if (!isNaN(newRow.balance)) {
+    else if (isNaN(newRow.balance)) {
       toast.error("Enter a valid number");
       isError = true;
 
