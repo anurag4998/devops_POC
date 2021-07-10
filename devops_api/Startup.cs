@@ -43,12 +43,8 @@ namespace devops_test_api
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseForwardedHeaders(new ForwardedHeadersOptions
-            {
-                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
-            });
+
             app.UseRouting();
-            app.UseCors("CorsPolicy");
 
             app.UseAuthorization();
 
