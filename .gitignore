@@ -1,3 +1,5 @@
 devops_api/bin
 devops_api/obj
 devops_client/node_modules
+devops_api/site.zip
+devops_api/deployementpackage.zip
