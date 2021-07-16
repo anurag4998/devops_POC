@@ -176,6 +176,11 @@ const Users = () => {
   useEffect(() => {
     async function fetch() {
       let users = await fetchdata();
+      // let dummydata = [{ id : 1, name : "Anurag Agrawal" , balance : 1000,  email_id: "anurag.agrawal@lntinfotech.com"},
+      //                   {id : 2, name : "Murtuza Patel"  ,balance : 1100,  email_id: "murtuza.patel@lntinfotech.com"},
+      //                   {id : 3, name : "Vineet Bakshi" ,  balance : 1200, email_id: "vineet.bakshi@lntinfotech.com"},
+      //                   {id : 4, name : "Astha Chaudhary" , balance : 1400,  email_id: "astha.chaudhary@lntinfotech.com"}
+      //                 ];
       setData(users);
     }
     fetch();
